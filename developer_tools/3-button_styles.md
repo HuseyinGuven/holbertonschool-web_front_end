@@ -1,5 +1,3 @@
-    
-    ## 3-button_styles
     padding: 1rem 1.75rem;
     font-size: 1.25rem;
     color: #f8f9fa;
