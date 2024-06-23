@@ -6,7 +6,7 @@ $list_to_sort: john, anna, zoe, kim, felicia, carrie;
     @for $j from 1 through $list-length - $i {
       $a: nth($list, $j);
       $b: nth($list, $j + 1);
-      @if $a > $b {
+      @if str-insert($a, "", 0) > str-insert($b, "", 0) {
         $list: set-nth($list, $j, $b);
         $list: set-nth($list, $j + 1, $a);
       }
